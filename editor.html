@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/editor.js"></script>
+<link rel="stylesheet" type="text/css" href="css/editor.css">
+<link rel="stylesheet" type="text/css" href="css/icon.css">
+<script src="js/jquery-1.11.3.js"></script>
+</head>
+<body onLoad="iFrameOn();">
+<div class="kapsula">
+<div class="tools">
+
+  <a class="myButton" onClick="iUndo()" value="undo" title="Скасувати (Ctrl+Z)"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="myButton" onClick="iRedo()" value="redo" title="Повернути (Ctrl+Y)"><i class="glyphicon glyphicon-chevron-right"></i></a>
+  <a class="myButton" onClick="iSaveTextAsFile()" value="save" title="Зберегти як text"><i class="glyphicon glyphicon-floppy-disk"></i></a>
+<br>
+  <a class="myButton" onClick="iBold()" value="B" title="Жирний (Ctrl+B)"><b>B</b></a>
+  <a class="myButton" onClick="iUnderline()" value="U" title="Підкреслений (Ctrl+U)"><u>U</u></a>
+  <a class="myButton" onClick="iItalic()" value="I" title="Курсив (Ctrl+I)"><i>I</i></a>
+  <a onClick="iSupScript()"  class="myButton" title="Верхній індекс">T<sup>2</sup></a>
+  <a onClick="iSubScript()" class="myButton" title="Нижній індекс">T<sub>2</sub></a>
+  <select  id="font_size" onchange="iFontSize()" title="Розмір шрифту">
+      <option value="3" class="small">normal</option>
+      <option value="1" class="xx-small">xx-small</option>
+      <option value="2" class="x-small">x-small</option>
+      <option value="4" class="medium">medium</option>
+      <option value="5" class="large">large</option>
+      <option value="6" class="x-large">x-large</option>
+      <option value="7" class="xx-large">xx-large</option>
+    </select>
+
+<!-- TODO -->
+ <select  id="font_color" onchange="iForeColor()" title="Колір шрифту">
+     <option value="black" class="black">black</option>
+     <option value="red" class="red">red</option>
+     <option value="blue" class="blue">blue</option>
+     <option value="brown" class="brown">brown</option>
+     <option value="cyan" class="cyan">cyan</option>
+     <option value="fuchsia" class="fuchsia">fuchsia</option>
+     <option value="green" class="green">green</option>
+     <option value="maroon" class="maroon">maroon</option>
+     <option value="yellow" class="yellow">yellow</option>
+   </select>
+   <select   id="font_name" onchange="iFontName()" title="Шрифт">
+      <option value="Times New Roman" class="TNR">Times New Roman</option>
+      <option value="Arial" class="arial">Arial</option>
+     </select>
+
+
+
+
+  <a onClick="iJustifyFull()" value="L" class="myButton" title="За лівою межею"><span class="glyphicon glyphicon-align-left"></span></a>
+  <a onClick="iJustifyCenter()" value="C" class="myButton" title="Центрувати горизонтально"><span class="glyphicon glyphicon-align-center"></span></a>
+  <a onClick="iJustifyRight()" value="R" class="myButton" title="За правою межею"><span class="glyphicon glyphicon-align-right"></span></a>
+  <a onClick="iJustifyFull()" value="F" class="myButton" title="У ширину"><span class="glyphicon glyphicon-align-justify"></span></a>
+  <a class="myButton" onClick="iUnorderedList()" value="UL" title="Маркований список"><span class="glyphicon glyphicon-list"></a>
+  <a class="myButton"  onClick="iOrderedList()" value="OL" title="Нумерація"><span class="glyphicon glyphicon-th-list"></a>
+  <a onClick="iInDent()" class="myButton" title="Збільшити відступ"><i class="glyphicon glyphicon-indent-left"></i></a>
+  <a onClick="iOutDent()" class="myButton" title="Зменшити відступ"><i class="glyphicon glyphicon-indent-right"></i></a>
+  <br>
+  <a class="myButton" onClick="iHorizontalRule()" value="HR" title="Горизонтальна лінія">HR</a>
+  <a class="myButton" onClick="iLink()" value="Link" title="Вставити гіперпосилання"><i class="glyphicon glyphicon-link"></i></a>
+  <a class="myButton" onClick="iImage()" value="Image" title="Вставити зображення"><i class="glyphicon glyphicon-picture"></i></a>
+
+
+
+
+  <br>
+  <p><input name="title" id="title" type="text" maxlength="80"></p>
+</div>
+
+<!-- Hide(but keep)your normal textarea and place in the iFrame replacement for it -->
+<iframe name="richTextField" id="richTextField" style="border:#000000 1px solid; width:700px; height:300px;" frameborder="0"> </iframe>
+<!-- End replacing your normal textarea -->
+
+</div>
+</body>
+</html>
