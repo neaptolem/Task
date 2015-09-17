@@ -15,9 +15,9 @@
   <a class="myButton" onClick="iRedo()" value="redo" title="Повернути (Ctrl+Y)"><i class="glyphicon glyphicon-chevron-right"></i></a>
   <a class="myButton" onClick="iSaveTextAsFile()" value="save" title="Зберегти як text"><i class="glyphicon glyphicon-floppy-disk"></i></a>
 <br>
-  <a class="myButton" onClick="iBold()" value="B" title="Жирний (Ctrl+B)"><b>B</b></a>
-  <a class="myButton" onClick="iUnderline()" value="U" title="Підкреслений (Ctrl+U)"><u>U</u></a>
-  <a class="myButton" onClick="iItalic()" value="I" title="Курсив (Ctrl+I)"><i>I</i></a>
+  <a id="bold" class="myButton" onClick="iBold(bold)" value="B" title="Жирний (Ctrl+B)"><b>B</b></a>
+  <a id="underline" class="myButton" onClick="iUnderline(underline)" value="U" title="Підкреслений (Ctrl+U)"><u>U</u></a>
+  <a class="myButton" onClick="iItalic(italic)" value="I" title="Курсив (Ctrl+I)"><i>I</i></a>
   <a onClick="iSupScript()"  class="myButton" title="Верхній індекс">T<sup>2</sup></a>
   <a onClick="iSubScript()" class="myButton" title="Нижній індекс">T<sub>2</sub></a>
   <select  id="font_size" onchange="iFontSize()" title="Розмір шрифту">

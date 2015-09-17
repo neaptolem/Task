@@ -7,13 +7,14 @@ function iUndo(){
 function iRedo(){
 	richTextField.document.execCommand('redo',false,null);
 }
-function iBold(){
+function iBold(e){
 	richTextField.document.execCommand('bold',false,null);
+	changecolor(e);
 }
-function iUnderline(){
+function iUnderline(e){
 	richTextField.document.execCommand('underline',false,null);
 }
-function iItalic(){
+function iItalic(e){
 	richTextField.document.execCommand('italic',false,null);
 }
 function iFontSize(){
@@ -31,22 +32,22 @@ function iFontName(){
 function iHorizontalRule(){
 	richTextField.document.execCommand('inserthorizontalrule',false,null);
 }
-function iUnorderedList(){
+function iUnorderedList(e){
 	richTextField.document.execCommand("InsertOrderedList", false,"newOL");
 }
-function iOrderedList(){
+function iOrderedList(e){
 	richTextField.document.execCommand("InsertUnorderedList", false,"newUL");
 }
-function iJustifyLeft(){
+function iJustifyLeft(e){
 	richTextField.document.execCommand("justifyLeft",false,null);
 }
-function iJustifyCenter(){
+function iJustifyCenter(e){
 	richTextField.document.execCommand("justifyCenter",false,null);
 }
-function iJustifyFull(){
+function iJustifyFull(e){
 	richTextField.document.execCommand("justifyFull",false,null);
 }
-function iJustifyRight(){
+function iJustifyRight(e){
 	richTextField.document.execCommand("justifyRight",false,null);
 }
 function iLink(){
@@ -62,16 +63,16 @@ function iImage(){
         richTextField.document.execCommand('insertimage', false, imgSrc);
     }
 }
-function iSupScript(){
+function iSupScript(e){
 	richTextField.document.execCommand("superscript", false, null);
 }
-function iSubScript(){
+function iSubScript(e){
 	richTextField.document.execCommand("subscript", false, null);
 }
-function iOutDent(){
+function iOutDent(e){
 	richTextField.document.execCommand("outdent", false, null);
 }
-function iInDent(){
+function iInDent(e){
 	richTextField.document.execCommand("indent", false, null);
 }
 
@@ -170,3 +171,8 @@ function iSaveTextAsFile()
 
 	downloadLink.click();
 }
+function changecolor(e) {
+	if (e.style.backgroundColor == 'silver'){
+		e.style.backgroundColor = 'gray';
+	} else 	e.style.backgroundColor = 'silver';
+	}

@@ -1,4 +1,6 @@
+#undo{
 
+}
 /*font color*/
 .red {
     color: red;
@@ -76,7 +78,7 @@
   	text-decoration:none;
   }
   .myButton:hover {
-  	background-color: #aaaaaa;
+  	background-color: silver;
   }
   .myButton:active {
   	position:relative;
