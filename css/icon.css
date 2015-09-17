@@ -19,28 +19,9 @@
     content: "\e080";
 }
 /*undo redo*/
-.glyphicon-scissors:before {
-    content: "\e226";
-}/*cut*/
-
-.glyphicon-copy:before {
-    content: "\e205";
-}
-
-.glyphicon-paste:before {
-    content: "\e206";
-}
-
-.glyphicon-pencil:before {
-    content: "\270f";
-}
 
 .glyphicon-picture:before {
     content: "\e060";
-}
-
-.glyphicon-share:before {
-    content: "\e066";
 }
 
 .glyphicon-align-left:before {
