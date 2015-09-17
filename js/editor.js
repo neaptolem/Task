@@ -84,7 +84,7 @@ window.onload = function(){
 				iPasteInRichEdit;
 	}
 };
-//todo redad about this functions/ change name of functions
+//paste fromated text in richedit
 function iPasteInRichEdit(e) {
     var text;
         if (window.clipboardData && window.clipboardData.getData) { // IE
@@ -99,9 +99,8 @@ function iPasteInRichEdit(e) {
         }
 
 }
-//read images
-var TCNDDU = TCNDDU || {};// for inserting from desktop
-// inserting from desktop
+//read images insert from desktop
+var TCNDDU = TCNDDU || {};
 (function () {
     var dropContainer,// what to output
         imageOut = document.createDocumentFragment(),// image for output
