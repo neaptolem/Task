@@ -13,9 +13,11 @@ function iBold(e){
 }
 function iUnderline(e){
 	richTextField.document.execCommand('underline',false,null);
+	changecolor(e);
 }
 function iItalic(e){
 	richTextField.document.execCommand('italic',false,null);
+	changecolor(e);
 }
 function iFontSize(){
 	var size= document.getElementById("font_size").value;
@@ -171,6 +173,7 @@ function iSaveTextAsFile()
 
 	downloadLink.click();
 }
+// change color of button by click
 function changecolor(e) {
 	if (e.style.backgroundColor == 'silver'){
 		e.style.backgroundColor = 'gray';
