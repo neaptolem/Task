@@ -1,4 +1,7 @@
 
+html, body{
+  background-image: url("../img/magitofon-lom-fon.jpg");
+}
 /*font color*/
 .red {
     color: red;
@@ -65,7 +68,7 @@
 }
   /* button style*/
   .myButton {
-  	background-color:gray;
+  	background-color:silver;
   	display:inline-block;
   	cursor:pointer;
   	color:#ffffff;
@@ -76,7 +79,7 @@
   	text-decoration:none;
   }
   .myButton:hover {
-  	background-color: silver;
+  	background-color: gainsboro;
   }
   .myButton:active {
   	position:relative;
@@ -92,8 +95,8 @@ width:720px;
      position: absolute;
      margin-left: 30px;
      margin-top: 20px;
-     background-color:gray;
-
+     background-color:silver;
+opacity: 0.9;
 }
 iframe{
   width:720px;
@@ -104,6 +107,7 @@ iframe{
   resize:both;
   background-color: white;
   overflow:auto;
+
 }
 #font_size{
   height: 22px;
