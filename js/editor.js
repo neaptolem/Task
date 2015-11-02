@@ -178,3 +178,21 @@ function changecolor(e) {
 		e.style.backgroundColor = 'gray';
 	} else 	e.style.backgroundColor = 'silver';
 	}
+
+function FindNext () {
+            var str = document.getElementById ("findInput").value;
+            if (str == "") {
+                alert ("Please enter some text to search!");
+                return;
+            }
+            
+            if (window.find) {        
+                var found = window.find (str);
+                if (!found) {
+                    alert ("The following text was not found:\n" + str);
+                }
+            }
+            else {
+                alert ("Your browser does not support this example!");
+            }
+        }
